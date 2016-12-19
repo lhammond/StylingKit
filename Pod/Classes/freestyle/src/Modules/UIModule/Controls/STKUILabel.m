@@ -217,17 +217,17 @@ NSString *const kDefaultCacheLabelLineBreakMode = @"label.lineBreakMode";
                 
             [[PXGenericStyler alloc] initWithHandlers: @{
                  @"text-transform" : ^(PXDeclaration *declaration, PXStylerContext *context) {
-                    STKUILabel *view = (PXUILabel *)context.styleable;
+                    STKUILabel *view = (STKUILabel *)context.styleable;
                     
                     [view px_setText:[declaration transformString:view.text]];
                 },
                  @"text-align" : ^(PXDeclaration *declaration, PXStylerContext *context) {
-                    STKUILabel *view = (PXUILabel *)context.styleable;
+                    STKUILabel *view = (STKUILabel *)context.styleable;
 
                     [view px_setTextAlignment:declaration.textAlignmentValue];
                 },
                  @"text-overflow" : ^(PXDeclaration *declaration, PXStylerContext *context) {
-                    STKUILabel *view = (PXUILabel *)context.styleable;
+                    STKUILabel *view = (STKUILabel *)context.styleable;
 
                     [view px_setLineBreakMode:declaration.lineBreakModeValue];
                 }
