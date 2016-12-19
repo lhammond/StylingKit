@@ -567,7 +567,7 @@ static const char DETAIL_TEXT_LABEL_BACKGROUND_SET;
             }
             else
             {
-                STKUIImageViewWrapper_UITableViewCell *view = (PXUIImageViewWrapper_UITableViewCell *) self.backgroundView;
+                STKUIImageViewWrapper_UITableViewCell *view = (STKUIImageViewWrapper_UITableViewCell *) self.backgroundView;
                 view.image = context.backgroundImage;
             }
             
@@ -592,7 +592,7 @@ static const char DETAIL_TEXT_LABEL_BACKGROUND_SET;
             }
             else
             {
-                STKUIImageViewWrapper_UITableViewCell *view = (PXUIImageViewWrapper_UITableViewCell *) self.px_selectedBackgroundView;
+                STKUIImageViewWrapper_UITableViewCell *view = (STKUIImageViewWrapper_UITableViewCell *) self.px_selectedBackgroundView;
                 view.image = context.backgroundImage;
             }
         }
@@ -611,7 +611,7 @@ static const char DETAIL_TEXT_LABEL_BACKGROUND_SET;
             }
             else
             {
-                STKUIImageViewWrapper_UITableViewCell *view = (PXUIImageViewWrapper_UITableViewCell *) self.px_multipleSelectionBackgroundView;
+                STKUIImageViewWrapper_UITableViewCell *view = (STKUIImageViewWrapper_UITableViewCell *) self.px_multipleSelectionBackgroundView;
                 view.image = context.backgroundImage;
             }
         }
