@@ -189,7 +189,7 @@ static const char STYLE_CHILDREN;
             }
             else
             {
-                STKUIImageViewWrapper_UICollectionViewCell *view = (PXUIImageViewWrapper_UICollectionViewCell *) self.backgroundView;
+                STKUIImageViewWrapper_UICollectionViewCell *view = (STKUIImageViewWrapper_UICollectionViewCell *) self.backgroundView;
                 view.image = context.backgroundImage;
             }
         }
@@ -208,7 +208,7 @@ static const char STYLE_CHILDREN;
             }
             else
             {
-                STKUIImageViewWrapper_UICollectionViewCell *view = (PXUIImageViewWrapper_UICollectionViewCell *) self.px_selectedBackgroundView;
+                STKUIImageViewWrapper_UICollectionViewCell *view = (STKUIImageViewWrapper_UICollectionViewCell *) self.px_selectedBackgroundView;
                 view.image = context.backgroundImage;
             }
         }
