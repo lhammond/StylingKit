@@ -372,7 +372,7 @@ didStartElement:(NSString *)elementName
 
     if (d)
     {
-        PXPath *path = [PXPath createPathFromPathData:d];
+        STKPath *path = [STKPath createPathFromPathData:d];
 
         [self applyStyles:attributeDict forShape:path];
         [self addShape:path];

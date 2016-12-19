@@ -52,7 +52,7 @@
 #import "PXEllipse.h"
 #import "PXLine.h"
 #import "PXPaintable.h"
-#import "PXPath.h"
+#import "STKPath.h"
 #import "PXPie.h"
 #import "PXPolygon.h"
 #import "PXRectangle.h"
