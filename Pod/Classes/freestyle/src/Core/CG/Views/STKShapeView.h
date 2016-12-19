@@ -15,7 +15,7 @@
  */
 
 //
-//  PXShapeView.h
+//  STKShapeView.h
 //  Pixate
 //
 //  Modified by Anton Matosov on 12/30/15.
@@ -27,9 +27,9 @@
 #import "PXShapeDocument.h"
 
 /**
- *  PXShapeView serves as a convenience class for displaying vector graphics as defined by Pixate's ShapeKit.
+ *  STKShapeView serves as a convenience class for displaying vector graphics as defined by Pixate's ShapeKit.
  */
-@interface PXShapeView : UIView
+@interface STKShapeView : UIView
 
 /**
  *  The top-level scene being rendered into this view

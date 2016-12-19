@@ -72,4 +72,4 @@
 #import "PXStrokeStroke.h"
 
 // views
-#import "PXShapeView.h"
+#import "STKShapeView.h"

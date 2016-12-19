@@ -24,7 +24,7 @@
 //
 
 #import "PXShape.h"
-#import "PXShapeView.h"
+#import "STKShapeView.h"
 #import "PXShadow.h"
 
 @implementation PXShape
