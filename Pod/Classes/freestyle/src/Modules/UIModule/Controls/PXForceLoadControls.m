@@ -37,7 +37,7 @@
 #import "PXUIActivityIndicatorView.h"
 #import "STKUIButton.h"
 #import "PXUIDatePicker.h"
-#import "PXUIImageView.h"  
+#import "STKUIImageView.h"  
 #import "PXUILabel.h"
 #import "PXUIPageControl.h"
 #import "PXUIPickerView.h"
@@ -75,7 +75,7 @@
     [PXUIActivityIndicatorView class];
     [STKUIButton class];
     [PXUIDatePicker class];
-    [PXUIImageView class];
+    [STKUIImageView class];
     [PXUILabel class];
     [PXUIPageControl class];
     [PXUIPickerView class];

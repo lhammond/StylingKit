@@ -45,8 +45,8 @@
 static NSDictionary *PSEUDOCLASS_MAP;
 static const char STYLE_CHILDREN;
 
-@interface PXUIImageViewWrapper_UICollectionViewCell : UIImageView @end
-@implementation PXUIImageViewWrapper_UICollectionViewCell @end
+@interface STKUIImageViewWrapper_UICollectionViewCell : UIImageView @end
+@implementation STKUIImageViewWrapper_UICollectionViewCell @end
 
 @implementation PXUICollectionViewCell
 
@@ -183,13 +183,13 @@ static const char STYLE_CHILDREN;
         {
             [self px_setBackgroundColor: [UIColor clearColor]];
             
-            if([self.px_backgroundView isKindOfClass:[PXUIImageViewWrapper_UICollectionViewCell class]] == NO)
+            if([self.px_backgroundView isKindOfClass:[STKUIImageViewWrapper_UICollectionViewCell class]] == NO)
             {
-                [self px_setBackgroundView: [[PXUIImageViewWrapper_UICollectionViewCell alloc] initWithImage:context.backgroundImage]];
+                [self px_setBackgroundView: [[STKUIImageViewWrapper_UICollectionViewCell alloc] initWithImage:context.backgroundImage]];
             }
             else
             {
-                PXUIImageViewWrapper_UICollectionViewCell *view = (PXUIImageViewWrapper_UICollectionViewCell *) self.backgroundView;
+                STKUIImageViewWrapper_UICollectionViewCell *view = (PXUIImageViewWrapper_UICollectionViewCell *) self.backgroundView;
                 view.image = context.backgroundImage;
             }
         }
@@ -202,13 +202,13 @@ static const char STYLE_CHILDREN;
         }
         else if(context.usesImage)
         {
-            if([self.px_selectedBackgroundView isKindOfClass:[PXUIImageViewWrapper_UICollectionViewCell class]] == NO)
+            if([self.px_selectedBackgroundView isKindOfClass:[STKUIImageViewWrapper_UICollectionViewCell class]] == NO)
             {
-                [self px_setSelectedBackgroundView: [[PXUIImageViewWrapper_UICollectionViewCell alloc] initWithImage:context.backgroundImage]];
+                [self px_setSelectedBackgroundView: [[STKUIImageViewWrapper_UICollectionViewCell alloc] initWithImage:context.backgroundImage]];
             }
             else
             {
-                PXUIImageViewWrapper_UICollectionViewCell *view = (PXUIImageViewWrapper_UICollectionViewCell *) self.px_selectedBackgroundView;
+                STKUIImageViewWrapper_UICollectionViewCell *view = (PXUIImageViewWrapper_UICollectionViewCell *) self.px_selectedBackgroundView;
                 view.image = context.backgroundImage;
             }
         }

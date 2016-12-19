@@ -249,13 +249,13 @@ static const char STYLE_CHILDREN;
 
             [[PXGenericStyler alloc] initWithHandlers: @{
              @"text-transform" : ^(PXDeclaration *declaration, PXStylerContext *context) {
-                STKUIButton *view = (PXUIButton *)context.styleable;
+                STKUIButton *view = (STKUIButton *)context.styleable;
                 NSString *newTitle = [declaration transformString:[view titleForState:UIControlStateNormal]];
 
                 [view px_setTitle:newTitle forState:UIControlStateNormal];
             },
              @"text-overflow" : ^(PXDeclaration *declaration, PXStylerContext *context) {
-                STKUIButton *view = (PXUIButton *)context.styleable;
+                STKUIButton *view = (STKUIButton *)context.styleable;
 
                 view.px_titleLabel.lineBreakMode = declaration.lineBreakModeValue;
             }

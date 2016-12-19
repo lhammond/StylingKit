@@ -67,8 +67,8 @@ static const char CELL_BACKGROUND_SET;
 static const char TEXT_LABEL_BACKGROUND_SET;
 static const char DETAIL_TEXT_LABEL_BACKGROUND_SET;
 
-@interface PXUIImageViewWrapper_UITableViewCell : UIImageView @end
-@implementation PXUIImageViewWrapper_UITableViewCell @end
+@interface STKUIImageViewWrapper_UITableViewCell : UIImageView @end
+@implementation STKUIImageViewWrapper_UITableViewCell @end
 
 @implementation PXUITableViewCell
 
@@ -553,9 +553,9 @@ static const char DETAIL_TEXT_LABEL_BACKGROUND_SET;
         {
             [self px_setBackgroundColor: [UIColor clearColor]];
             
-            if([self.px_backgroundView isKindOfClass:[PXUIImageViewWrapper_UITableViewCell class]] == NO)
+            if([self.px_backgroundView isKindOfClass:[STKUIImageViewWrapper_UITableViewCell class]] == NO)
             {
-                [self px_setBackgroundView: [[PXUIImageViewWrapper_UITableViewCell alloc] initWithImage:context.backgroundImage]];
+                [self px_setBackgroundView: [[STKUIImageViewWrapper_UITableViewCell alloc] initWithImage:context.backgroundImage]];
 
                 if([parent isKindOfClass:[UITableView class]] && parent.style == UITableViewStyleGrouped)
                 {
@@ -567,7 +567,7 @@ static const char DETAIL_TEXT_LABEL_BACKGROUND_SET;
             }
             else
             {
-                PXUIImageViewWrapper_UITableViewCell *view = (PXUIImageViewWrapper_UITableViewCell *) self.backgroundView;
+                STKUIImageViewWrapper_UITableViewCell *view = (PXUIImageViewWrapper_UITableViewCell *) self.backgroundView;
                 view.image = context.backgroundImage;
             }
             
@@ -586,13 +586,13 @@ static const char DETAIL_TEXT_LABEL_BACKGROUND_SET;
         }
         else
         {
-            if([self.px_selectedBackgroundView isKindOfClass:[PXUIImageViewWrapper_UITableViewCell class]] == NO)
+            if([self.px_selectedBackgroundView isKindOfClass:[STKUIImageViewWrapper_UITableViewCell class]] == NO)
             {
-                [self px_setSelectedBackgroundView: [[PXUIImageViewWrapper_UITableViewCell alloc] initWithImage:context.backgroundImage]];
+                [self px_setSelectedBackgroundView: [[STKUIImageViewWrapper_UITableViewCell alloc] initWithImage:context.backgroundImage]];
             }
             else
             {
-                PXUIImageViewWrapper_UITableViewCell *view = (PXUIImageViewWrapper_UITableViewCell *) self.px_selectedBackgroundView;
+                STKUIImageViewWrapper_UITableViewCell *view = (PXUIImageViewWrapper_UITableViewCell *) self.px_selectedBackgroundView;
                 view.image = context.backgroundImage;
             }
         }
@@ -605,13 +605,13 @@ static const char DETAIL_TEXT_LABEL_BACKGROUND_SET;
         }
         else
         {
-            if([self.px_multipleSelectionBackgroundView isKindOfClass:[PXUIImageViewWrapper_UITableViewCell class]] == NO)
+            if([self.px_multipleSelectionBackgroundView isKindOfClass:[STKUIImageViewWrapper_UITableViewCell class]] == NO)
             {
                 [self px_setMultipleSelectionBackgroundView: [[UIImageView alloc] initWithImage:context.backgroundImage]];
             }
             else
             {
-                PXUIImageViewWrapper_UITableViewCell *view = (PXUIImageViewWrapper_UITableViewCell *) self.px_multipleSelectionBackgroundView;
+                STKUIImageViewWrapper_UITableViewCell *view = (PXUIImageViewWrapper_UITableViewCell *) self.px_multipleSelectionBackgroundView;
                 view.image = context.backgroundImage;
             }
         }
