@@ -35,7 +35,7 @@
 #import "PXMPVolumeView.h"
 #import "PXUIActionSheet.h"
 #import "PXUIActivityIndicatorView.h"
-#import "PXUIButton.h"
+#import "STKUIButton.h"
 #import "PXUIDatePicker.h"
 #import "PXUIImageView.h"  
 #import "PXUILabel.h"
@@ -73,7 +73,7 @@
     [PXMPVolumeView class];
     [PXUIActionSheet class];
     [PXUIActivityIndicatorView class];
-    [PXUIButton class];
+    [STKUIButton class];
     [PXUIDatePicker class];
     [PXUIImageView class];
     [PXUILabel class];

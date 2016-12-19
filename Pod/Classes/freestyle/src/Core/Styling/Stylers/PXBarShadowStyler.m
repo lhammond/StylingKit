@@ -78,7 +78,7 @@
                 size = bounds.size;
             }
 
-            STKShapeView *shapeView = [[PXShapeView alloc] initWithFrame:bounds];
+            STKShapeView *shapeView = [[STKShapeView alloc] initWithFrame:bounds];
 
             [shapeView loadSceneFromURL:context.shadowUrl];
             context.shadowImage = shapeView.renderToImage;
